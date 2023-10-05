@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+.inicio{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu{
+    left: 0;
+    padding:12px 0 12px 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: left;
+    gap: 40px;
+    background-color: rgb(56, 100, 48);
+    position: relative;
+    transform:translateX(-117px);
+    transition: 0.2s;
+}
+.menu:hover{
+    transform: translateX(0px);
+    transition: 0.4s;
+}
+.menu a:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.384);
+    transition: 0.3s;
+}
+
+.menu div{
+    text-align: right;
+    padding: 5px;
+}
+.menu button {
+    width: 25px;
+    font-size: x-large;
+}
+.menu img {
+    width: 100px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+.menu ul{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu a{
+    height: 30px;
+    padding: 3px;
+    width: 100%;
+    margin-right: 40px;
+    display: flex;
+    gap: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+
+}
+.menu ion-icon{
+    display: flex;
+    font-size:20px;
+}
+
+
+.profile{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content:right;
+    align-items:end;
+}
+.profile img{
+    width: 500px;
+    height: 500px;
+
+}
+.texto{
+    height: 100vh;
+    padding: 15px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.texto h1 span,a{
+    color: rgb(26, 70, 26);
+    padding-left:5px ;
+    
+    
+}
+.texto h1 {
+    padding: 5px;
+    font-size: 50px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+@media screen and (max-width:835px){
+    body{
+        background-color: rgb(31, 31, 31);
+        
+    }
+    .texto{
+        
+        position: absolute;
+        color: rgb(255, 255, 255);
+        padding: 30px 60px;
+        padding-right: 100px;
+        text-align:justify;
+
+    }
+    .texto h1{
+        color: rgb(255, 255, 255);
+    }
+    .profile img{ 
+        position: relative;
+        z-index: -1;
+        justify-content: end;
+        height: 400px;
+        width: 400px;
+        
+    }
+
+}
+@media screen and (max-width:515px) {
+    .profile img{
+        display: none;
+    }
+    
+    
+}
