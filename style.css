@@ -24,7 +24,7 @@
     height: 100%;
     align-items: left;
     gap: 40px;
-    background-color: rgb(56, 100, 48);
+    background:linear-gradient( black , rgb(68, 68, 68));
     position: relative;
     transform:translateX(-117px);
     transition: 0.2s;
@@ -103,6 +103,7 @@
     
 }
 .texto h1 {
+    border-radius: 8px;
     padding: 5px;
     font-size: 50px;
     color: black;
